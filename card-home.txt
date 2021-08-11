@@ -1,0 +1,73 @@
+<div class="col-md-4 mb-3">
+  <a class="card-kelas" href="info-kelas.html">
+    <div class="card">
+      <img class="img-fluid" alt="100%x280" src="IMG/bg-buka_kelas.jpg" />
+      <div class="card-body bg-light">
+        <div class="row">
+          <div class="col-md-3">
+            <!-- foto profil -->
+            <img class="foto-profil" src="IMG/foto-profil.jpg" alt="foto-profil" />
+          </div>
+          <div class="col ms-3">
+            <h5 class="mb-3">Struktur Bangunan</h5>
+            <div style="line-height: 0.3;">
+              <p class="card-text">Iqbal Bin Yahya</p>
+              <p>30 Mei 2022</p>
+              <p>23:59 WIB</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </a>
+</div>
+
+
+// list kelas per kategori
+
+<section class="pt-1 pb-2">
+      <div class="container">
+        <div class="row">
+          <div class="col-6">
+            
+            //Ganti h4 di bawah untuk mengubah nama kategori
+
+            <h4 class="mb-3 text-light">Kelas yang sudah di buka</h4>
+          </div>
+          <div class="col-6 text-right">
+            <a
+              class="btn btn-dark mb-3 mr-1"
+              href="#carouselControls1"
+              role="button"
+              data-slide="prev"
+            >
+              <i class="fa fa-arrow-left"></i>
+            </a>
+            <a class="btn btn-dark mb-3" href="#carouselControls1" role="button" data-slide="next">
+              <i class="fa fa-arrow-right"></i>
+            </a>
+          </div>
+          <div class="col-12">
+            <div id="carouselControls1" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner kelas-dibuka">
+                <div class="carousel-item active">
+                  <div class="row">
+                    
+                    //isi dengan card-home diatas
+                    
+                  </div>
+                </div>
+                <!-- Kelas yang sudah di buka - Slide 2 -->
+                <div class="carousel-item">
+                  <div class="row">
+                    
+                    //isi dengan card-home diatas
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>

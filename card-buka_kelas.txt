@@ -1,0 +1,44 @@
+// isi di "listKelasContainer"
+
+
+<div class="row">
+  <!-- Kolom 1 -->
+  <div class="col-md-6 col-12">
+    <a style="width: 100%;" class="btn btn-light mb-3" data-bs-toggle="collapse" href="#collapse3" role="button" aria-expanded="false" aria-controls="collapse3">
+      <div class="row">
+        <div class="col-3">
+          <img class="foto-profil im g-fluid" src="IMG/foto-profil.jpg" alt="profil" />
+        </div>
+        <div class="col pt-2" style="text-align: start; line-height: 0.6;">
+          <button onclick="href()" class="btn-link">Struktur Bangunan</button>
+          <p>Iqbal Bin Yahya</p>
+          <p class="text-secondary" style="font-size: 14px;">
+            30 Mei 2022 • 23 : 59 WIB
+          </p>
+        </div>
+      </div>
+    </a>
+    <div class="collapse" id="collapse3">
+      <div class="card card-body mb-3">
+        Informasi tambahan seputar kelas Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+        <a class="btn btn-dark mt-2" href="info-kelas.html">Cek Kelas</a>
+      </div>
+    </div>
+  </div>
+  <!-- Kolom 1 Ends -->
+  
+</div>
+
+<div class="col-md-9 col-12">
+          <!-- Tab Content -->
+          <!-- Prodi 1 -->
+          <div class="tab-content">
+            <div id="prodi1" class="container tab-pane active">
+              <div class="listKelasContainer">
+
+              // isi dengan card di atas
+
+              </div>
+            </div>
+          </div>
+</div>
