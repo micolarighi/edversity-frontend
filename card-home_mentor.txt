@@ -1,0 +1,61 @@
+//card
+
+<div class="col-md-6 col-12">
+  <a style="width: 100%;" class="btn btn-light mb-3" data-bs-toggle="collapse" href="#collapse3" role="button" aria-expanded="false" aria-controls="collapse3">
+    <div class="row">
+      <div class="col-3">
+        <img class="foto-profil img-fluid" src="IMG/foto-profil.jpg" alt="profil" />
+      </div>
+      <div class="col pt-2" style="text-align: start; line-height: 0.6;">
+        <button onclick="href()" class="btn-link">Struktur Bangunan</button>
+        <p>Iqbal Bin Yahya</p>
+        <p class="text-secondary" style="font-size: 14px;">
+          30 Mei 2022 • 23 : 59 WIB
+        </p>
+      </div>
+    </div>
+  </a>
+  <div class="collapse" id="collapse3">
+    <div class="card card-body mb-3">
+      Informasi tambahan seputar kelas Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+      <a class="btn btn-dark mt-2" href="info-kelas-mentor.html">Cek Kelas</a>
+    </div>
+  </div>
+</div>
+
+// kelas yang bisa di ajar -> container
+
+<div class="tab-content">
+  <div id="prodi1" class="container tab-pane active">
+    <div class="listKelasContainer ms-1">
+      <h3 class="text-light mb-4 mt-2">Kelas yang bisa diajar</h3>
+      <!-- search box -->
+      <div class="row">
+        <div class="col-md-8 col-12">
+          <div style="width: 100%;" class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Cari Kelas" aria-describedby="button-addon2" />
+            <button class="btn btn-light search-class">
+              <i class="fa primary-color fa-search"></i>
+            </button>
+          </div>
+        </div>
+        <div class="col-md-4 col-12 mb-3">
+          <div class="d-flex dropdown justify-content-end align-items-center">
+            <label for="dropdownMenuButton1" class="text-light me-3">Urutkan</label>
+            <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+              Terbaru
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="#">Terbaru</a></li>
+              <li><a class="dropdown-item" href="#">Paling Banyak Diikuti</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- list kelas -->
+      <div class="row listKelasContainer">
+        
+        //isi dengan card
+
+      </div>  
