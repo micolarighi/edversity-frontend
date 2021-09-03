@@ -26,10 +26,10 @@ const currentNumbOfData = 0
       console.log(dataMentor);
       t.row.add( [
         `${dataMentor[currentNumbOfData].nama}`,
-        `${dataMentor[currentNumbOfData].nama}`,
-        `${dataMentor[currentNumbOfData].nama}`,
-        `${dataMentor[currentNumbOfData].nama}`,
-        `${dataMentor[currentNumbOfData].nama}`
+        `${dataMentor[currentNumbOfData].jurusan}`,
+        `${dataMentor[currentNumbOfData].username}`,
+        `${dataMentor[currentNumbOfData].email}`,
+        `${dataMentor[currentNumbOfData].password}`
       ] ).draw( false );
       currentNumbOfData++
   } );
