@@ -141,22 +141,32 @@
                                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                                     <thead>
                                         <tr>
+                                            <th>Status</th>
                                             <th>Nama</th>
                                             <th>Jurusan</th>
                                             <th>Username</th>
                                             <th>Email</th>
                                             <th>Password</th>
+                                            <th>No Telepon</th>
                                         </tr>
                                     </thead>
                                     
                                     <tbody class="tableBody">
                                     
                                         <tr class="none">
+                                            <td>
+                                                <select class="form-select" id="inputGroupSelect01">
+                                                    <option selected>Aktif</option>
+                                                    <option value="1">Tidak Aktif
+                                                    </option>
+                                                </select> 
+                                            </td>
                                             <td>Belum ada Mentor</td>
                                             <td>Belum ada Mentor</td>
                                             <td>Belum ada Mentor</td>
                                             <td>Belum ada Mentor</td>
                                             <td>Belum ada Mentor</td>
+                                            <td>Belum ada mentor</td>
                                         </tr>
                                         
                                     </tbody>
@@ -199,6 +209,7 @@
             </div>
             <div class="modal-body mt-2">
                 <h4>Masukkan data mentor</h4>
+               
                 <div class="mb-3">
                     <label for="formInput" class="form-label">Nama Lengkap</label>
                     <input type="text" class="form-control nama" id="formInput" placeholder="Masukkan Nama Lengkap..">
@@ -215,9 +226,14 @@
                     <label for="formInput" class="form-label">Email</label>
                     <input type="email" class="form-control email" id="formInput" placeholder="Masukkan Email valid..">
                 </div>
+                
                 <div class="mb-3">
-                    <label for="formInput" class="form-label">Password</label>
+                    <label for="formInput" class="form-lab el">Password</label>
                     <input type="password" class="form-control password" id="formInput" placeholder="Masukkan Password..">
+                </div>
+                <div class="mb-3">
+                    <label for="formInput" class="form-lab el">Nomor Telepon</label>
+                    <input type="text" class="form-control inputNomorTelp" id="formInput" placeholder="Masukkan Nomor Untuk Dihubungi..">
                 </div>
                   
             </div>
