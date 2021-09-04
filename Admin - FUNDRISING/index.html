@@ -53,19 +53,20 @@
                     <!-- Logo -->
                     <h2>ed. <sup class="fs-6">ADMIN</sup></h2>
 
-                    <!-- Topbar Search -->
-                    <form
-                        class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
-                        <div class="input-group">
-                            <input type="text" class="form-control bg-light border-0 small" placeholder="Cari..."
-                                aria-label="Search" aria-describedby="basic-addon2">
-                            <div class="input-group-append">
-                                <button class="btn bg_primary color_light" type="button">
-                                    <i class="fa fa-search"></i>
-                                </button>
-                            </div>
+                    <!-- Navbar-->
+                    <nav class="navbar">
+                        <div class="collapse navbar-collapse" id="navbarNav">
+
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link active color_primary" href="index.html">Transaksi</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link color_primary" href="request_penukaran.html">Request Penukaran</a>
+                                </li>
+                            </ul>
                         </div>
-                    </form>
+                    </nav>
 
                     <!-- Topbar Navbar -->
                     <ul class="navbar-nav ml-auto">
@@ -128,7 +129,7 @@
                     <!-- Transaksi-->
                     <div class="card shadow mb-4">
                         <div class="card-header py-3">
-                            <h6 class="m-0 font-weight-bold color_primary">Klik <kbd>Lihat Detail</kbd> untuk melakukan verifikasi terhadap transaksi </h6>
+                            <h6 class="m-0 font-weight-bold">Klik <kbd>Lihat Detail</kbd> untuk melakukan verifikasi terhadap transaksi </h6>
                         </div>
                         <div class="card-body">
                             <div class="table-responsive">
@@ -152,6 +153,7 @@
                                             <td class="jumlah_bayar">40.000</td>
                                             <td class="metode_bayar">Transfer</td>
                                             <td class="waktu">09/05/2022</td>
+                                            
                                         </tr>
                                         <tr>
                                             <td class="detail"><a  data-bs-target="#detailModal" data-bs-toggle="modal">Lihat Detail</a></td>
@@ -160,6 +162,7 @@
                                             <td class="jumlah_bayar">80.000</td>
                                             <td class="metode_bayar">Gopay</td>
                                             <td class="waktu">09/08/2022</td>
+                                            
                                         </tr>
                                     </tbody>
                                 </table>
@@ -202,15 +205,15 @@
             <div class="modal-body">
                 <div class="row mb-4">
                     <div class="col">
-                        <label class="username">Username</label><h3 class="username_content">farhan00</h3>
-                        <label class="jumlah_koin">Jumlah Koin</label><h3 class="jumlah_koin_content">10</h3>
+                        <label id="username">Username</label><h3 id="username_content">farhan00</h3>
+                        <label id="jumlah_koin">Jumlah Koin</label><h3 id="jumlah_koin_content">10</h3>
                     </div>
                     <div class="col">
-                        <label class="jumlah_bayar">Jumlah Bayar</label><h3 class="jumlah_bayar_content">40.000</h3>
-                        <label class="metode">Metode</label><h3 class="metode_content">Transfer</h3>
+                        <label id="jumlah_bayar">Jumlah Bayar</label><h3 id="jumlah_bayar_content">40.000</h3>
+                        <label id="metode">Metode</label><h3 id="metode_content">Transfer</h3>
                     </div>
                     <div class="col">
-                        <label class="waktu">Waktu & Tanggal</label><h3 class="waktu_content">09/05/2022</h3>
+                        <label id="waktu">Waktu & Tanggal</label><h3 id="waktu_content">09/05/2022</h3>
                     </div>
                 </div>
               <img class="img-fluid" src="bukti_bayar-micola_arighi.jpeg" alt="">
@@ -218,6 +221,21 @@
             <div class="modal-footer">
               <button type="button" class="btn btn-danger">Tolak</button>
               <button type="button" class="btn btn-primary color_light">Verifikasi</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <!-- Detail Modal -->
+    <div class="modal fade" id="konfirmasiModal" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-body mt-2">
+                <h4>Tandai kelas ini selesai?</h4>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Batal</button>
+              <button type="button" class="btn btn-primary color_light">Ya</button>
             </div>
           </div>
         </div>
